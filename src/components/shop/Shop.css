@@ -1,0 +1,11 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr; 
+     /* section ta k 2 vage vag korci tai repeat use kori nai */
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     /* gap: 45px; gap is not working */
+    gap: 45px;
+}
