@@ -12,8 +12,8 @@ const Shop = () => {
 
     const handleAddToCart = (product)=>{
         console.log(product)
-        //cart.push(product) -->age aita use hoito ekhn spread operator use hoy ager value gula store korte
-        const newCart = [...cart, product];
+        // aita use e korbo nah --> cart.push(product) -->age aita use hoito ekhn spread operator use hoy ager value gula store korte
+        const newCart = [...cart, product]; //ager gula copy kore arry er moddhe boshbabo then notun gula  aisha boshbe
         setCart(newCart);
    }
     return (
@@ -33,6 +33,7 @@ const Shop = () => {
             <div className='cart-container'>
                 <h4>Order summery</h4>
                 <p>selected items: {cart.length}</p>
+                <p>{console.log(cart)}</p>
             </div>
         </div>
     );
